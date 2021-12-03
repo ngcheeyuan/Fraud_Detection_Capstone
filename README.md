@@ -14,7 +14,7 @@ The project is separated into 3 notebooks:
 
  	1. Baseline Model
  	2. EDA
- 	1. Final Model
+ 	3. Final Model
 
 **Baseline Model**
 
