@@ -14,7 +14,7 @@ The project is separated into 3 notebooks:
 
  	1. Baseline Model
  	2. EDA
-	1. Final Model
+ 	1. Final Model
 
 **Baseline Model**
 
@@ -27,6 +27,8 @@ This notebook is separated into 2 main segments. The first half deals with looki
 **Some notable features:**
 
 In each of the features shown below, we can see that fraudulent transactions has a different behaviour compared to regular transactions. We will go into more details in the notebook.
+
+![](images/image-20211203224404641.png)
 
 ![image-20211203224404641](C:\Users\YuanAnaconda\AppData\Roaming\Typora\typora-user-images\image-20211203224404641.png)
 
