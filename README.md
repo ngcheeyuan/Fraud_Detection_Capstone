@@ -77,56 +77,31 @@ Fluctuations in total actual cost from month to month is due to large fluctuatio
 
 **Data Dictionary**
 
-| Column Name             | Data type  | Description                                                                                               |
-|-------------------------|------------|-----------------------------------------------------------------------------------------------------------|
-| Address                 | Object     | Address of where the traps are laid                                                                       |
-| Species                 | Object     | Species of Mosquitoes captured                                                                            |
-| Latitude                | float64    | Latitude of trap location                                                                                 |
-| Longitude               | float64    | Longitude of trap location                                                                                |
-| NumMosquitos            | int64      | Total number of mosquitoes found in the sample. Number ranges from 1 to 50.                               |
-| WnvPresent              | int64      | 1 represents West Nile Virus detected in sample.  0 represent West Nile Virus not detected in the sample. |
-| Year                    | int64      | Year of when the entry was recorded. Takes up value 2007,2009,2011 and 2013.                              |
-| Month                   | int64      | Month of when the entry was recorded. Ranges between 5 to 10.                                             |
-| Week                    | int64      | Week of when the entry was recorded. Ranges between 22 to 41.                                             |
-| Cluster                 | int64      | Which group the trap is clustered under. Ranges between 0 to 3.                                           |
-| Tmax                    | float64    | Maximum recorded temperature of the day, recorded in Celcius.                                             |
-| Tmin                    | float64    | Minimum recorded temperature of the day, recorded in Celcius.                                             |
-| Tavg                    | float64    | Average temperature of the day (Tmax + Tmin)/2 , recorded in Celcius                                      |
-| DewPoint                | float64    | Dew point of the day, recorded in Celcius.                                                                |
-| PrecipTotal             | float64    | Total precipitation recorded in inches.                                                                   |
-| AvgSpeed                | float64    | Average wind speed recorded for the day in miles per hours                                                |
-| seconds_daylight        | float64    | Number of seconds between sun rise to sun set.                                                            |
-| Tmax_pct                | float64    | Percentage change of Tmax compared to one day before.                                                     |
-| Tmin_pct                | float64    | Percentage change of Tmin compared to one day before.                                                     |
-| Tavg_pct                | float64    | Percentage change of Tavg compared to one day before.                                                     |
-| DewPoint_pct            | float64    | Percentage change of DewPoint compared to one day before.                                                 |
-| PrecipTotal_pct         | float64    | Percentage change of Total precipitation recorded compared to one day before.                             |
-| AvgSpeed_pct            | float64    | Percentage change of wind speed compared to one day before.                                               |
-| seconds_daylight_pct    | float64    | Percentage change in time from sun rise to sun set compared to the day before.                            |
-| Tmax_MA                 | float64    | 7 days moving average of recorded maximum temperature in Celcius.                                         |
-| Tmin_MA                 | float64    | 7 days moving average of recorded minimum temperature in Celcius.                                         |
-| Tavg_MA                 | float64    | 7 days moving average of recorded average temperature in Celcius.                                         |
-| DewPoint_MA             | float64    | 7 days moving average of recorded Dew point. Recorded in Celcius.                                         |
-| PrecipTotal_MA          | float64    | 7 days moving average of recorded total precipitation.                                                    |
-| AvgSpeed_MA             | float64    | 7 days moving average of recorded wind speeds.                                                            |
-| seconds_daylight_MA     | float64    | 7 days moving average of length of time between sun rise and sun set  recorded in seconds.                |
-| Tmax_pct_MA             | float64    | 7 days moving average of percentage change in maximum temperature.                                        |
-| Tmin_pct_MA             | float64    | 7 days moving average of percentage change in minimum temperature.                                        |
-| Tavg_pct_MA             | float64    | 7 days moving average of percentage change in average temperature.                                        |
-| DewPoint_pct_MA         | float64    | 7 days moving average of percentage change in dew point.                                                  |
-| PrecipTotal_pct_MA      | float64    | 7 days moving average of percentage change in total precipitation.                                        |
-| AvgSpeed_pct_MA         | float64    | 7 days moving average of percentage change in average wind speed.                                         |
-| seconds_daylight_pct_MA | float64    | 7 days moving average of percentage change in time between sun rise and sun set.                          |
-| Precip_MA_lag           | float64    | Previous recorded 7 days moving average total precipitation at the trap.                                  |
-| seconds_daylight_lag    | float64    | Previous recorded length of the day recorded at the trap.                                                 |
-| RH                      | float64    | Relative humidity, computed from average temperature and dew point.                                       |
-| Num_sample              | float64    | Number of samples of mosquitoes caught by the trap.                                                       |
-| Total_mos               | int64      | Total number of mosquitoes caught by the trap.                                                            |
-| Total_wnv               | int64      | Total number of samples tested positive for west nile virus  when the trap was checked.                   |
-| MIR                     | float64    | Mosquito infection rate. (Number of West Nile Virus Positive samples)/(total specimens tested * 1000)     |
-| Previous_mos            | float64    | Previous recorded total number of mosquitoes caught by the trap.                                          |
-| Previous_mir            | float64    | Previous recorded mosquito infection rate.                                                                |
-| Previous_num_sample     | float64    | Previous recorded number of tested samples.                                                               |
-| Day                     | int64      | Day of the month when the entry was recorded.                                                             |
-
-
+| Column Name     | Data Type | Description                                                          |
+|-----------------|-----------|----------------------------------------------------------------------|
+| ssn             | string    | Serial-number of the credit card                                     |
+| cc_num          | int       | Credit card number                                                   |
+| first           | string    | First name of the cardholder                                         |
+| last            | string    | Last name of the cardholder                                          |
+| gender          | string    | Gender of the cardholder (M/F)                                       |
+| street          | string    | Address of the cardholder                                            |
+| city            | string    | City where the cardholder is from                                    |
+| state           | string    | State where the cardholder is from                                   |
+| zip             | int       | Zip Code of the cardholder's address                                 |
+| lat             | float     | Latitude of cardholder's address                                     |
+| long            | float     | Longitude of cardholder's address                                    |
+| city_pop        | int       | Population count of the city where the cardholder is from            |
+| job             | string    | Cardholder's profession                                              |
+| dob             | string    | Date of birth in yyyy/mm/dd format                                   |
+| acct_num        | int       | cardholder's account number                                          |
+| trans_num       | string    | unique alphanumeric code of the transaction                          |
+| trans_date      | string    | Date of transaction in yyyy/mm/dd format                             |
+| trans_time      | string    | Time when the transaction occurred, in 24 hours format.              |
+| unix_time       | int       | Date time when the transaction occurred in unix format.              |
+| category        | string    | The category of which the transaction belongs to                     |
+| amt             | float     | Transaction amount                                                   |
+| is_fraud        | int       | Class label, indicator whether the transaction is fraudulent or not. |
+| merchant        | string    | Name of the merchant                                                 |
+| merch_lat       | float     | Latitude of merchant's address                                       |
+| merch_long      | float     | Longitude of merchant's address                                      |
+| trans_date_time | datetime  | Date and time when the transaction occurred.                         |
