@@ -8,13 +8,17 @@ The aim of the project is to identify fraudulent credit card transactions at the
 
 [Sparkov Data Generation, Synthetic credit card transactions](https://github.com/namebrandon/Sparkov_Data_Generation)
 
+**Data Set:**
+
+[Link to dataset hosted on google drive](https://drive.google.com/drive/folders/1QdtrHzm_R01-ZOZAqG-zWEfh0tymTF9i?usp=sharing)
+
 **Project Outline:**
 
 The project is separated into 3 notebooks:
 
  	1. Baseline Model
  	2. EDA
- 	1. Final Model
+ 	3. Final Model
 
 **Baseline Model**
 
@@ -73,5 +77,31 @@ Fluctuations in total actual cost from month to month is due to large fluctuatio
 
 **Data Dictionary**
 
-
-
+| Column Name     | Data Type | Description                                                          |
+|-----------------|-----------|----------------------------------------------------------------------|
+| ssn             | string    | Serial-number of the credit card                                     |
+| cc_num          | int       | Credit card number                                                   |
+| first           | string    | First name of the cardholder                                         |
+| last            | string    | Last name of the cardholder                                          |
+| gender          | string    | Gender of the cardholder (M/F)                                       |
+| street          | string    | Address of the cardholder                                            |
+| city            | string    | City where the cardholder is from                                    |
+| state           | string    | State where the cardholder is from                                   |
+| zip             | int       | Zip Code of the cardholder's address                                 |
+| lat             | float     | Latitude of cardholder's address                                     |
+| long            | float     | Longitude of cardholder's address                                    |
+| city_pop        | int       | Population count of the city where the cardholder is from            |
+| job             | string    | Cardholder's profession                                              |
+| dob             | string    | Date of birth in yyyy/mm/dd format                                   |
+| acct_num        | int       | cardholder's account number                                          |
+| trans_num       | string    | unique alphanumeric code of the transaction                          |
+| trans_date      | string    | Date of transaction in yyyy/mm/dd format                             |
+| trans_time      | string    | Time when the transaction occurred, in 24 hours format.              |
+| unix_time       | int       | Date time when the transaction occurred in unix format.              |
+| category        | string    | The category of which the transaction belongs to                     |
+| amt             | float     | Transaction amount                                                   |
+| is_fraud        | int       | Class label, indicator whether the transaction is fraudulent or not. |
+| merchant        | string    | Name of the merchant                                                 |
+| merch_lat       | float     | Latitude of merchant's address                                       |
+| merch_long      | float     | Longitude of merchant's address                                      |
+| trans_date_time | datetime  | Date and time when the transaction occurred.                         |
