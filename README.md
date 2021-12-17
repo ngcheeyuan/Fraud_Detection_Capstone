@@ -73,7 +73,7 @@ After running our models on our test set, we have found that XGBoost out perform
 
 **Note:** 
 
-Fluctuations in total actual cost from month to month is due to large fluctuations in total number of transactions, with varying transaction amounts. Our precision and recall for all 3 models are relatively stable through out the 12 months of 2015.
+Fluctuations in total actual cost from month to month is due to large fluctuations in total number of transactions, with varying transaction amounts. 
 
 **Data Dictionary**
 
